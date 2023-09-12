@@ -24,3 +24,6 @@ def fibonacci(n):
 start = time()
 print(fibonacci(40))
 print(f"На это ушло времени {time() - start}")
+
+
+print('Hello!')
