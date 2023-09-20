@@ -47,7 +47,7 @@ def quick_sort(array: list):
     # Последовательно пройдём по массиву A и запишем в C[i] количество чисел, равных i.
     # Теперь достаточно пройти по массиву C и для каждого number∈{0,...,k−1}  в массив A
     # последовательно записать число C[number] раз.
-def counting_sort(array: list):
+def counting_sort(array: list): # сортировка подсчетом
     temp_array = [0] * (max(array) + 1)
     for el in array:
         temp_array[el] += 1
@@ -83,7 +83,7 @@ print("Counting sort") #
 how_long(counting_sort, new_list)
 
 print("Built in sorting") # Встроенная сортировка в Python
-list_2 = new_list[::]
+list_2 = new_list[::]# поэлементное копирование Срезами
 start = time.time()
 list_2.sort()
 print(f"На это ушло времени {time.time() - start}")
@@ -96,3 +96,5 @@ print(f"На это ушло времени {time.time() - start}")
 print("Bubble sort") # Пузырьковая сортировка
 how_long(sorting, new_list)
 # print(new_list)
+
+# Библиотека NumPy
