@@ -24,7 +24,7 @@ def sorting(array: list):
 
 
 # Задание 2
-# Написать алгоритм быстрого поиска (quicksort).
+# Написать алгоритм быстрой сортировки (quicksort).
 def quick_sort(array: list):
     if len(array) <= 1:
         return array
