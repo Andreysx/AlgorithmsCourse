@@ -70,7 +70,7 @@ def merge_sort(s):
     return s if len(s) == 1 else merge_two_list(merge_sort(s[:mid]), merge_sort(s[mid:]))
 
 # Генерация списка - рандомного в заданном диапазоне
-new_list = [random.randint(0, 1_000_000) for _ in range(10_000)]
+new_list = [random.randint(0, 10_000_000) for _ in range(10_000)]
 # print(new_list)
 
 print("Merger sort")
@@ -82,7 +82,7 @@ print(f"На это ушло времени {time.time() - start}")
 print("Counting sort") #
 how_long(counting_sort, new_list)
 
-print("Built in sorting") # Встроенная сортировка в Python
+print("Built in sorting,include in Python") # Встроенная сортировка в Python
 list_2 = new_list[::]# поэлементное копирование Срезами
 start = time.time()
 list_2.sort()
